@@ -1,0 +1,98 @@
+$skyblue: #76baff;
+$lightgreen: #a3ffca;
+
+.signup-outer-wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, lighten($bluegreen, 35%), lighten($skyblue, 15%));
+	.matte {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.1);
+		.signup-container {
+			background: #ffffff;
+			width: 20em;
+			border-radius: 12px;
+			margin: 50px 0 50px 0;
+			.signUpForm {
+				padding: 3em;
+				h2 {
+					margin: 0;
+					margin-bottom: .7em;
+					font-family: 'Open Sans', sans-serif;
+				}
+				.input-wrapper {
+					border: 2px solid rgba(0, 0, 0, 0.1);
+					border-radius: 5px;
+					padding: .5em 1em;
+					margin: 0 .8em .8em 0;
+					input {
+						border-width: 0;
+						padding: 0;
+						margin: 0;
+						width: 100%;
+						outline: none;
+						font-family: 'Roboto', Arial, Verdana, sans-serif;
+						font-size: 1.1em;
+						color: #666;
+					}	
+				}
+				button {
+					border: none;
+					border-radius: 25px;
+					background-color: $skyblue;
+					color: #ffffff;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 1.2em;
+					padding: .6em;
+					width: 100%;
+				}
+				button:hover {
+					background: darken($skyblue, 10%);
+					color: #ffffff;
+					cursor: pointer;
+					transition: all .3s ease;
+				}	
+			}	
+			.signInFooter {
+				padding: 7%;
+				background: #888;
+				border-radius: 0 0 10px 10px;
+				display: flex;
+				justify-content: center;
+				text-decoration: none;
+				font-family: 'Didact Gothic', sans-serif;
+				color: #ffffff;
+			}
+			.signInFooter:hover {
+				background: darken(#888, 20%);
+				transition: all .5s ease;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+
+.focused {
+	border: 2px solid $lightgreen;
+	border-radius: 5px;
+	padding: .5em 1em;
+	margin-bottom: .8em;
+	input {
+		border-width: 0;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		outline: none;
+		font-family: 'Roboto', Arial, Verdana, sans-serif;
+		font-size: 1.1em;
+		color: #666;
+	}		
+}

@@ -1,0 +1,71 @@
+//Greens
+$green: #61be1a; 
+$limegreen: #a9da20;
+$brightforestgreen: #00b60d;
+$bluegreen: #0da163;
+//Reds
+$error-red: #d43334;
+//Whites
+$eggshell: #fdf5ea;
+//Browns
+$darkbrown: #2d1a0c;
+$brown: #472812;
+//Blues
+$turqoise: #23d160;
+$skyblue: #3bb6ff;
+$tealish: #4ef4ad;
+//Green Tea Greens
+$lightest-greentea: #bcdb90;
+$lighter-greentea: #a9ce7f;
+$light-greentea: #9bc16f;
+$medium-greentea: #8aa95d;
+$dark-greentea: #739c4c;
+
+.toast-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+}
+
+#toast {
+    visibility: hidden;
+    min-width: 100px;
+    background: darken($skyblue, 10%);
+    color: #fff;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 12px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {right: 0px; opacity: 0;} 
+    to {right: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {right: 0px; opacity: 0;}
+    to {right: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {right: 30px; opacity: 1;} 
+    to {right: -10px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {right: 30px; opacity: 1;}
+    to {right: -10px; opacity: 0;}
+}

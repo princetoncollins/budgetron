@@ -1,0 +1,12 @@
+<div class="navigation-toolbar">
+	<div class="navigation-inner-container">
+		<div class="logo-container">
+			<p ui-sref="main.home">{{ vm.companyLogo }}</p>
+		</div>
+		<div class="nav-menu">
+			<div class="nav-item" ui-sref="main.dashboard" ng-if="vm.user">
+				<p>Dashboard</p>
+			</div>
+		</div>
+	</div>
+</div>

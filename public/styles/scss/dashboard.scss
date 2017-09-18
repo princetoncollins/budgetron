@@ -1,0 +1,194 @@
+//Reds
+$error-red: #d43334;
+//Whites
+$eggshell: #fdf5ea;
+//Browns
+$darkbrown: #2d1a0c;
+$brown: #472812;
+//Blues
+$turqoise: #23d160;
+$skyblue: #3bb6ff;
+$tealish: #4ef4ad;
+//Greens
+$green: #61be1a; 
+$limegreen: #a9da20;
+$brightforestgreen:	#00b60d;
+$bluegreen:	#0da163;
+//Green Tea Greens
+$lightest-greentea: #bcdb90;
+$lighter-greentea: #a9ce7f;
+$light-greentea: #9bc16f;
+$medium-greentea: #8aa95d;
+$dark-greentea: #739c4c;
+
+.dashboard-header {
+	width: 100%;
+	height: 70px;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	h3 {
+		position: relative;
+		left: 55px;
+		width: 600px;
+		margin: 0;
+		font-family: 'Nunito', sans-serif;
+		font-size: 30px;
+		font-weight: 300;
+		color: #ffffff; 
+		background: linear-gradient(to right, lighten(#333, 15%), #eeeeee);
+  		-webkit-background-clip: text; // Use this in conjuction with the linear-gradient, if used.
+  		-webkit-text-fill-color: transparent; // Use this in conjuction with the linear-gradient, if used.
+	}
+	.profile {
+		cursor: pointer;
+		z-index: 100;
+		font-family: 'Nunito', sans-serif;
+		font-size: 18px;
+		color: #fff;
+	 	position: relative;
+	 	right: 33px;
+	}
+}
+
+
+// @-webkit-keyframes slidein {
+//     from {right: -3%; opacity: .5;} 
+//     to {right: 0%; opacity: 1;}
+// }
+
+// @keyframes slidein {
+//     from {right: -3%; opacity: .5;}
+//     to {right: 0%; opacity: 1;}
+// }
+
+// @-webkit-keyframes slideout {
+//     from {right: 0%; opacity: 1;} 
+//     to {right: -3%; opacity: 0;}
+// }
+
+// @keyframes slideout {
+//     from {right: 0%; opacity: 1;}
+//     to {right: -3%; opacity: 0;}
+// }
+
+
+
+
+
+/* General styles for all menus */
+
+.side-menu {
+	background: #333;
+	position: fixed;
+}
+
+.side-menu > .name {
+	text-align: center;
+	line-height: 90px;
+	color: $skyblue;
+	height: 90px;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	border-bottom: 2px solid #333;
+	background: #333;
+}
+
+.side-menu a {
+	display: block;
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+.side-menu a:hover {
+	color: $tealish;
+	cursor: pointer;
+}
+
+.side-menu a:active {
+	background: #333;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.side-menu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.side-menu-vertical a {
+	line-height: 70px;
+	text-align: center;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.side-menu-right {
+	right: -240px;
+}
+
+.side-menu-right.side-menu-open {
+	right: 0px;
+}
+
+/* Push classes applied to the body */
+
+.side-menu-push {
+	overflow-x: hidden;
+	position: relative;
+	right: 0;
+}
+
+.side-menu-push-toLeft {
+	right: 240px;
+    background-color: rgba(0, 30, 50, 0.6);
+}
+
+/* Transitions */
+
+.side-menu,
+.side-menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-height: 26.375em){
+
+	.side-menu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.side-menu-left,
+	.side-menu-push-toleft {
+		left: -190px;
+	}
+
+	.side-menu-right {
+		right: -190px;
+	}
+
+	.side-menu-push-toright {
+		left: 190px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

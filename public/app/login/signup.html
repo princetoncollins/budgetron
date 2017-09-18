@@ -1,0 +1,27 @@
+<div class="signup-outer-wrapper">
+	<div class="matte">
+		<div class="signup-container">
+			<div class="signUpForm">
+				<h2>Sign Up</h2>
+				<div class="form-container">
+					<form name="signUp" class="form">
+						<div class="input-wrapper">
+							<input type="text" name="username" ng-model="userInfo.username" ng-required="true" placeholder="User Name">
+						</div>
+						<!-- <p class="input-error" ng-show="signUp.username.$invalid && signUp.username.$touched">Please, enter a user name.</p> -->
+						<div class="input-wrapper">
+							<input type="password" name="password" ng-model="userInfo.password" ng-required="true" placeholder="Password">
+						</div>
+						<!-- <p class="input-error" ng-show="signUp.password.$invalid && signUp.password.$touched">Please, enter a password.</p> -->
+						<div class="input-wrapper">
+							<input type="password" name="passwordRetyped" ng-model="userInfo.passwordRetyped" ng-required="true" placeholder="Re-type Password">
+						</div>
+						<!-- <p class="input-error" ng-show="signUp.passwordRetyped.$invalid && signUp.passwordRetyped.$touched">Please, re-type your password.</p> -->
+					</form>
+					<button ng-click="vm.createUser(userInfo)">Sign Up</button>
+				</div>
+			</div>
+			<a class="signInFooter" ui-sref="login">Already have an account? Sign in!</a>
+		</div>
+	</div>
+</div>

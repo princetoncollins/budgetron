@@ -1,0 +1,56 @@
+//Greens
+$green: #61be1a; 
+$limegreen: #a9da20;
+$brightforestgreen:	#00b60d;
+$bluegreen:	#0da163;
+//Reds
+$error-red: #d43334;
+//Whites
+$eggshell: #fdf5ea;
+//Browns
+$darkbrown: #2d1a0c;
+$brown: #472812;
+//Blues
+$turqoise: #23d160;
+$skyblue: #3bb6ff;
+$tealish: #4ef4ad;
+//Green Tea Greens
+$lightest-greentea: #bcdb90;
+$lighter-greentea: #a9ce7f;
+$light-greentea: #9bc16f;
+$medium-greentea: #8aa95d;
+$dark-greentea: #739c4c;
+
+.banner {
+	margin: 0;
+	height: 250px;
+	width: 100%;
+	background: linear-gradient(to right, $turqoise, $tealish);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.banner-inner-container {
+		width: 90%;
+		height: 90%;
+		h1 {
+			width: 600px;
+			margin: 0;
+			font-family: 'Nunito', sans-serif;
+			font-size: 50px;
+			font-weight: 300;
+			color: #ffffff; 
+			background: linear-gradient(to right, lighten($turqoise, 15%), #ffffff);
+	  		-webkit-background-clip: text; // Use this in conjuction with the linear-gradient, if used.
+	  		-webkit-text-fill-color: transparent; // Use this in conjuction with the linear-gradient, if used.
+		}
+		h2 {
+			width: 700px;
+			margin: 5px 0 0 0;
+			text-transform: uppercase;
+			font-family: 'Julius Sans One', sans-serif;
+			font-weight: 300;
+			font-size: 20px;
+			color: #ffffff;
+		}
+	}
+}

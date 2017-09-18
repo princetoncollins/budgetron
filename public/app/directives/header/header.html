@@ -1,0 +1,11 @@
+<div class="account-toolbar">
+	<div class="account-inner-container">
+		<div></div>
+		<div class="account">
+			<p ng-if="vm.user">Hello, <span>{{ vm.user.username }}</span></p>
+			<md-button class="reg-button" ui-sref="main.login" ng-if="!vm.user">Login</md-button>
+			<md-button class="primary-button" ui-sref="main.signup" ng-if="!vm.user">Sign Up</md-button>
+			<md-button class="primary-button" ng-click="vm.logout()" ng-if="vm.user">Logout</md-button>
+		</div>
+	</div>
+</div>

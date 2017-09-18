@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="budgetron">
+	<head>
+		<title>Budgetron</title>
+		<!-- Font Awesome -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:100|Russo+One|Days+One|Montserrat+Alternates:200,600|Didact+Gothic|Comfortaa|Cinzel|Poppins|
+		Poiret+One|Sanchez|Julius+Sans+One|Oxygen|Quicksand|Nunito" rel="stylesheet">
+		<!-- Third Party Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-tooltips/dist/angular-tooltips.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+		<!-- Custom Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="../styles/css/style.css">
+	</head>
+
+	<body ng-controller="IndexController as vm" class='side-menu-push'>
+
+		<!-- <div header></div> -->
+
+		<div class="toast-wrapper">
+			<div id="toast">{{ vm.notifications[0] }}</div>
+		</div>
+
+		<!-- <div navigation-toolbar></div> -->
+		
+		<div class="view-container" ui-view></div>
+
+		<!-- <div footer></div> -->
+
+
+		<!-- ANGULAR SCRIPTS -->
+		<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+		<script src="node_modules/angular-cookies/angular-cookies.min.js"></script>
+
+		<!-- FILES -->
+		<script src="app.module.js"></script>
+
+		<!-- CONTROLLERS -->
+		<script src="indexCtrl.js"></script>
+		<script src="login/loginCtrl.js"></script>
+		<script src="dashboard/dashboardCtrl.js"></script>
+		<script src="home/homeCtrl.js"></script>
+		<script src="main/mainCtrl.js"></script>
+
+		<!-- SERVICES -->
+		<script src="login/loginService.js"></script>
+
+		<!-- DIRECTIVES -->
+		<script src="directives/footer/footer.js"></script>
+		<script src="directives/header/header.js"></script>
+		<script src="directives/navigation-toolbar/navigation-toolbar.js"></script>
+
+		<!-- THIRD PARTY -->
+		<script src="node_modules/angular-tooltips/dist/angular-tooltips.min.js"></script>
+		<script src="node_modules/angular-material/angular-material.min.js"></script>
+		<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+		<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	</body>
+</html>

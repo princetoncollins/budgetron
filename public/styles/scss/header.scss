@@ -1,0 +1,129 @@
+//Greens
+$green: #61be1a; 
+$limegreen: #a9da20;
+$brightforestgreen:	#00b60d;
+$bluegreen:	#0da163;
+//Reds
+$error-red: #d43334;
+//Whites
+$eggshell: #fdf5ea;
+//Browns
+$darkbrown: #2d1a0c;
+$brown: #472812;
+//Blues
+$turqoise: #23d160;
+$skyblue: #3bb6ff;
+$tealish: #4ef4ad;
+//Green Tea Greens
+$lightest-greentea: #bcdb90;
+$lighter-greentea: #a9ce7f;
+$light-greentea: #9bc16f;
+$medium-greentea: #8aa95d;
+$dark-greentea: #739c4c;
+
+
+.account-toolbar {
+	height: 60px;
+	width: 100%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	.account-inner-container {
+		height: 100%;
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.account {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		p {
+			font-family: 'Roboto', sans-serif;
+			font-size: 19px;
+			font-weight: bold;
+			margin: 0;
+		}
+		span {
+			text-transform: uppercase;
+			color: $turqoise;
+			margin: none;
+		}
+	}
+}
+
+.navigation-toolbar {
+	height: 60px;
+	width: 100%;
+	background: linear-gradient(to right, $turqoise, $tealish);
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	.navigation-inner-container {
+		height: 100%;
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+		.logo-container {
+			height: 100%;
+			width: 275px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			p {
+				margin: 0;
+				font-family: 'Quicksand', sans-serif;
+				font-weight: 500;
+				font-size: 18px;
+				color: #ffffff;
+				cursor: pointer;
+			}
+		}
+		.nav-menu {
+			height: 100%;
+			width: 300px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			.nav-item {
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				cursor: pointer;
+				p {
+					padding-left: 10px;
+					padding-right: 10px;
+					// margin: 0;
+					font-family: 'Nunito', sans-serif;
+					font-weight: 500;
+					font-size: 18px;
+					color: #ffffff;
+				}
+			}
+			.nav-item:hover {
+				background: rgba(0, 0, 0, 0.1);
+			}
+		}	
+	}
+}
+
+
+// Button Styling.
+.reg-button {
+	font-weight: bold;
+}
+
+.reg-button:hover {
+	color: lighten($turqoise, 5%);
+}
+
+.primary-button {
+	color: #ffffff;
+	font-weight: bold;
+	background: lighten($turqoise, 20%);
+}
+.primary-button:not([disabled]):hover {
+	background: lighten($turqoise, 5%);
+}
